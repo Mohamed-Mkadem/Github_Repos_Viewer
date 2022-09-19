@@ -53,6 +53,7 @@ async function getUserInfo(username) {
       printError(` These people are not welcome`);
     } else if (userInfo.message) {
       empty(userInfoWrapper);
+      empty(reposWrapper);
       printError(` Something went wrong! Check your spelling and try again`);
     } else {
       printUserInfo(userInfo);

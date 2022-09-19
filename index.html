@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Github Viewer</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="images/github-icon.png" type="image/x-icon">
+    
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="main-wrapper" id="main-wrapper">
+      <div class="container">
+        <header>
+          <h1 class="title">Github Viewer</h1>
+          <form action="" method="post" id="main-form">
+            <div class="form-control">
+              <input
+                type="text"
+                id="input-value"
+                placeholder="Your Github Username"
+              />
+              <button type="submit">Get Data</button>
+            </div>
+          </form>
+        </header>
+        <div class="user-info-wrapper" id="user-info-wrapper"></div>
+
+        <h2 id="error-message"></h2>
+
+        <div class="repos-wrapper" id="repos-wrapper"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
